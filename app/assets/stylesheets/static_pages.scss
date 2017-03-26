@@ -85,7 +85,7 @@ li.dropdown {
   background-position: center;
   background-size: cover;
   height: 600px;
-  // box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5);
+  box-shadow: 0px 2-px 30px rgba(153, 153, 153, 1);
 }
 
 h1.splash-title {
@@ -104,6 +104,16 @@ h1.splash-title {
   text-shadow: 10px 0px 20px rgba(0, 0, 0, 1);
 }
 
+.subtitle-container {
+  text-align: center;
+}
+
+#splash-subtitle-dark {
+  font-size: 32px;
+  color: $panel-title;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
 .splash-hr {
   width: "100px";
 }
@@ -120,7 +130,8 @@ h1.splash-title {
 .section-app {
   margin-top: 0px;
   margin-bottom: 0px;
-  background-image: image-url("shoes-stairs.jpg");
+  // background-image: image-url("shoes-stairs.jpg");
+  background-color: rgba(246,246,246, 0.5);
   background-position: center;
   background-size: cover;
   height: 300px;
