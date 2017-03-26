@@ -79,18 +79,32 @@ li.dropdown {
 
 .section-top {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   background-image: image-url("bike_cervelo.jpg");
   background-position: center;
   background-size: cover;
-  height: 800px;
-  box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5);
+  height: 600px;
+  // box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5);
 }
 
-#header-top {
-  margin-top: 150px;
-  color: #fff;
+h1.splash-title {
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: 300;
+  color: rgba(255,255,255,1);
   text-shadow: 10px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.splash-subtitle {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 10px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.splash-hr {
+  width: "100px";
 }
 
 #strava-button {
@@ -99,8 +113,31 @@ li.dropdown {
 }
 
 .jumbotron {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
+
+.section-app {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-image: image-url("shoes-stairs.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5);
+}
+
+
+.section-shoes {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-image: image-url("shoes-stairs.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5);
+}
+
+
 
 // Dashboard
 
@@ -266,11 +303,18 @@ li.dropdown {
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 767px) {
      .section-top {
-       height: 500px;
+       height: 400px;
      }
 
      li.dropdown {
        border: none;
        border-radius: 0;
+     }
+
+     #strava-button {
+       margin-top: 50px;
+       width: 200px;
+       margin-left: auto;
+       margin-right: auto;
      }
    }
