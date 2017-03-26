@@ -1,0 +1,187 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Main
+
+body {
+  font-family: Roboto;
+  min-height: 1000px;
+}
+
+#fixed-nav-body-margin {
+  height: 70px;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.5em;
+}
+
+hr {
+  border-top: 1px solid rgba(153, 153, 153, 0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+// Nav
+
+.navbar-default {
+  font-size: 16px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #D6D5D6;
+  box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5);
+  font-weight: 300;
+}
+
+.navbar-header {
+  margin-top: 10px;
+}
+
+#logo {
+  color: #FC4C02;
+  font-size: 26px;
+}
+
+#nav-tall {
+  height: 70px;
+}
+
+.navbar ul>li {
+  background-color: #f6f6f6;
+}
+
+.dropdown-menu {
+  background-color: #f6f6f6;
+}
+
+.navbar-right {
+  margin-top: 10px;
+}
+
+.navbar-default .navbar-collapse {
+  border: none;
+}
+
+li.dropdown {
+  // border: 1px solid rgba(153, 153, 153, 0.8);
+  // border-radius: 0.5em;
+  // background-color: rgba(153, 153, 153, 0.5);
+}
+
+// Splash Page
+
+.section-top {
+  margin-top: 0px;
+  background-image: image-url("bike_cervelo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+
+#header-top {
+  margin-top: 150px;
+  color: #fff;
+  text-shadow: 10px 0px 20px rgba(0, 0, 0, 1);
+}
+
+#strava-button {
+  margin-top: 50px;
+  width: 300px;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+// Dashboard
+
+.panel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  box-shadow: 0px 0px 40px rgba(153, 153, 153, 0.3),
+              0px 10px 30px rgba(153, 153, 153, 0.3);
+  border: none;
+  border-radius: 0.5em;
+}
+
+.bike-panel-heading {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+  border-bottom: 0px solid rgba(153, 153, 153, 0.2);
+}
+
+.bike-panel-footer {
+  height: 70px;
+}
+
+.bike-table-row {
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  display: block;
+}
+
+.bike-col {
+  height: 30px;
+  width: 50%;
+  display: block;
+}
+
+.top-left, .bottom-left{
+  float: left;
+}
+
+.top-right, .bottom-right{
+  float: right;
+}
+
+#bike-icon{
+    height: 125px;
+}
+
+.bike-odo {
+  float: right;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 6px 9px;
+  font-size: 16px;
+  box-shadow: 0px 0px 40px rgba(153, 153, 153, 0.3),
+              0px 10px 30px rgba(153, 153, 153, 0.3);
+}
+
+.dashboard-header {
+  margin-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+
+.dashboard-header h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
+// footer
+
+.footer {
+  background-color: #FBFBFB;
+  border-radius: 0;
+}
+
+#footer-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 767px) {
+     .section-top {
+       height: 500px;
+     }
+
+     li.dropdown {
+       border: none;
+       border-radius: 0;
+     }
+   }
