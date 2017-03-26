@@ -190,7 +190,7 @@ h1.splash-title {
 }
 
 .bike-table-row-short {
-  height: 20px;
+  height: 25px;
   width: 100%;
   border: 0px solid rgba(153, 153, 153, 0.2);
   margin: 0;
@@ -206,7 +206,7 @@ h1.splash-title {
 }
 
 .bike-col {
-  height: 30px;
+  height:18px;
   width: 50%;
 }
 
@@ -286,7 +286,7 @@ h1.splash-title {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  padding: 0px 15px;
+  padding: 10px 15px;
   box-shadow: 0px 0px 20px rgba(153, 153, 153, 0.3),
               0px 10px 20px rgba(153, 153, 153, 0.3);
   z-index: 1000;
@@ -352,6 +352,20 @@ h1.splash-title {
 #footer-container {
   margin: 0;
   padding: 0;
+}
+
+.footer-nav{
+  list-style-type: none;
+}
+
+.footer-link a{
+  text-decoration: none;
+  color: $panel-title;
+}
+
+.footer-link a:hover{
+  text-decoration: underline;
+  color: $panel-title;
 }
 
 /* Custom, iPhone Retina */

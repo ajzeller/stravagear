@@ -1,0 +1,64 @@
+# Strava Gear
+
+_Detailed stats for your bikes and shoes. All in one place. [stravagear.com](http://stravagear.com)_
+
+---
+
+Strava is **the** social network for fitness. With over 1.2 million active
+users and 304 million uploaded activities in 2016, Strava makes fitness social
+and fun. It allows you track nearly any fitness activity you could imagine,
+follow your friends, and compete with athletes.
+
+Alongside these features, Strava tracks mileage on your equipment like shoes and bikes.
+Unfortunately, this data is buried deep within the settings menu on Strava's desktop
+site, and is not shown on their
+
+### Inspiration
+
+Unfortunately, this valuable data about your gear's mileage is buried deep within the settings menu on Strava's desktop
+site, and cannot be found shown within Strava's mobile apps.
+
+In modern times, users heavily prefer mobile experiences over desktop sites, and
+Strava's demographic of athletic, on-the-go young professionals is no exception.
+
+I have found myself in several situations such as going shoe shopping or in a
+bike shop where it would be valuable to for me to easily view the mileage of my running shoes or bikes,
+however Strava's mobile app lacks this functionality.
+
+### What it does
+
+[Strava Gear](http://stravagear.com) is a simple, beautiful, mobile-first application that visualizes detailed
+statistics about your bikes and shoes. It uses Strava's API to pull data about a user's bikes including
+the bike make, model, mileage, and description and a user's shoes including shoe brand, model, and mileage.
+This data is then displayed on a sleek dashboard with the ability to add comments about
+condition and service info about your equipment. The concept begins with the user
+authenticating by clicking the button on the splash page and then they can go to their dashboard
+
+
+### How I built it
+- I began designing the application with hand-drawn wireframes and then built it using
+Ruby on Rails. I utilized Twitter's Bootstrap CSS framework with heavy customizations in SCSS,
+which Rails preprocesses before serving.
+- I used chrome dev tools heavily to ensure the user interface would be amazing on both desktop and mobile.
+- I used Adobe Photoshop and Illustrator to prepare images and icons for the site.
+- I used git and GitHub for version control through the weekend.
+- The site is deployed on Heroku using a custom domain name from domains.com.
+
+
+### Challenges I ran into
+- The biggest challenge I faced over the weekend was that I participated in a triathlon
+on Sunday morning, so I chose to do this project solo and complete the majority of it by Saturday night.
+This required me to limit the scope of the project and focus on simplicity and mainly building out the frontend UI.
+- As a mechanical engineering student, I lack a formal background in computer science
+unlike many of the participants at CrimsonHacks.
+
+### Accomplishments that I'm proud of
+- I'm very proud to have built a live, production rails app over the course of the weekend.
+
+### What I learned
+- I learned a lot about integrating APIs, using Bootstrap as a framework, and UI design in general.
+
+### What's next for Strava Gear
+- I plan to add and improve more features like image upload, user profile, user authentication, and note adding.
+- The nature of the site also opens up monetization opportunities because the site obtains data
+about when a user will need to replace their footwear and
