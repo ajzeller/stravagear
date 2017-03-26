@@ -5,9 +5,10 @@
 // Colors and Mixins
 
 $default-border: #D6D5D6;
-$nav-bg: #f6f6f6;
+$nav-bg: rgba(246,246,246, 1.0);
 $panel-title: rgba(0, 0, 0, 0.5);
 $strava-main: #FC4C02;
+$mileage-bubble: rgba(0, 0, 0, 0.35);
 // Main
 
 body {
@@ -54,11 +55,11 @@ hr {
 }
 
 .navbar ul>li {
-  background-color: #f6f6f6;
+  background-color: $nav-bg;
 }
 
 .dropdown-menu {
-  background-color: #f6f6f6;
+  background-color: $nav-bg;
 }
 
 .navbar-right {
@@ -211,7 +212,7 @@ h1.splash-title {
 }
 
 .bike-odo {
-  background: $panel-title;
+  background: $mileage-bubble;
   float: right;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -286,6 +287,48 @@ h1.splash-title {
   background-color: rgba(240,70,5, 1.0);
 }
 
+// shoe panel
+
+#shoe-icon {
+  height: 100px;
+}
+
+.shoe-table-row-short {
+  height: 40px;
+  width: 100%;
+  border: 0px solid rgba(153, 153, 153, 0.2);
+  margin: 0;
+  padding: 15px;
+}
+
+.shoe-table-row {
+  height: 10px;
+  width: 100%;
+  border: 0px solid rgba(153, 153, 153, 0.2);
+  margin: 0;
+  overflow: none;
+}
+
+.progress {
+  box-shadow: 0px 0px 20px rgba(153, 153, 153, 0.3),
+              0px 10px 20px rgba(153, 153, 153, 0.3);
+}
+
+.progress-bar {
+  background-color: $strava-main;
+  box-shadow: 0px 0px 20px rgba(153, 153, 153, 0.3),
+              10px 10px 30px rgba(153, 153, 153, 0.4);
+  border-radius: 4px;
+}
+
+#shoe-panel-footer {
+  height: 75px;
+}
+
+#add-comment-shoe {
+  margin-top: 10px;
+  padding: 10px 15px;
+}
 
 // footer
 

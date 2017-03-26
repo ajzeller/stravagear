@@ -1,0 +1,52 @@
+"bikes":[
+  {
+    "id":"b2596806",
+    "primary":false,
+    "name":"Black Rocket",
+    "resource_state":2,
+    "distance":2670746.0},
+  {
+    "id":"b2400094",
+    "primary":false,
+    "name":"Fuel Ex 8 29",
+    "resource_state":2,
+    "distance":65827.0},
+  {
+    "id":"b2362197",
+    "primary":true,
+    "name":"My Baby",
+    "resource_state":2,
+    "distance":5717122.0},
+  {
+    "id":"b3465219",
+    "primary":false,
+    "name":"Trek Crockett",
+    "resource_state":2,
+    "distance":543830.0}],
+
+"shoes":[
+  {
+    "id":"g2033226",
+    "primary":true,
+    "name":"Nike Free Flyknit 4.0 Green",
+    "resource_state":2,
+    "distance":31156.0},
+  {
+    "id":"g1777068",
+    "primary":false,
+    "name":"Zoot Makai Blue",
+    "resource_state":2,
+    "distance":119381.0},
+  {
+    "id":"g1452139",
+    "primary":false,
+    "name":"Zoot Carlsbad Blue",
+    "resource_state":2,
+    "distance":391880.0},
+    {
+    "id":"g996681",
+    "primary":false,
+    "name":"Brooks Ghost Grey / Red / Yellow",
+    "resource_state":2,"distance":472182.0
+    }
+  ]

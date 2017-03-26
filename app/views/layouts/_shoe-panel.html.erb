@@ -1,39 +1,30 @@
 <div class="col-md-4">
     <div class="panel panel-default">
       <div class="bike-panel-heading">
-        <%= image_tag("bike-icon.png", :id => "bike-icon") %>
+        <%= image_tag("shoe-icon.png", :id => "shoe-icon") %>
       </div>
       <div class="panel-container">
         <div class="make-model-container">
-          <h3 class="make">Trek</h3>
-          <h4 class="model">Madone</h4>
+          <h3 class="make">Brooks</h3>
+          <h4 class="model">Ghost </h4>
         </div>
 
-        <span class="badge bike-odo" >1000 mi</span>
+        <span class="badge bike-odo" >293.4 mi</span>
       </div>
 
-      <div class="bike-panel-footer">
-          <div class="bike-table-row-short top-row">
-              <div class="bike-col top-left bike-detail-title">
-                Weight
-              </div>
-              <div class="bike-col top-right bike-detail-title">
-                Type
-              </div>
+      <div class="bike-panel-footer" id="shoe-panel-footer">
+          <div class="shoe-table-row-short top-row">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="293.4"
+                aria-valuemin="0" aria-valuemax="500" style="width: 73%;">
+                  293.4 / 500 mi
+                  </div>
+            </div>
           </div>
-
-          <div class="bike-table-row bottom-row">
-              <div class="bike-col bottom-left bike-detail">
-                20.0 LB
-              </div>
-              <div class="bike-col bottom-right bike-detail">
-                Road
-              </div>
-              <a href="#"><div class="add-comment">
-                <i class="fa fa-comment" aria-hidden="true"></i>
-              </div>
-              </a>
+          <a href="#"><div class="add-comment" id="add-comment-shoe">
+            <i class="fa fa-comment" aria-hidden="true"></i>
           </div>
-        </div>
+          </a>
       </div>
-</div>
+    </div>
+  </div>
