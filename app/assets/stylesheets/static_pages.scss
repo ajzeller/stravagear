@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+// Colors and Mixins
+
+$default-border: #D6D5D6;
+$nav-bg: #f6f6f6;
+$panel-title: rgba(0, 0, 0, 0.5);
+$strava-main: #FC4C02;
 // Main
 
 body {
@@ -26,7 +33,7 @@ hr {
 
 .navbar-default {
   font-size: 16px;
-  background-color: #f6f6f6;
+  background-color: $nav-bg;
   border-bottom: 1px solid #D6D5D6;
   box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5);
   font-weight: 300;
@@ -37,8 +44,9 @@ hr {
 }
 
 #logo {
-  color: #FC4C02;
+  color: $strava-main;
   font-size: 26px;
+  text-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5)
 }
 
 #nav-tall {
@@ -71,10 +79,12 @@ li.dropdown {
 
 .section-top {
   margin-top: 0px;
+  margin-bottom: 20px;
   background-image: image-url("bike_cervelo.jpg");
   background-position: center;
   background-size: cover;
   height: 800px;
+  box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.5);
 }
 
 #header-top {
@@ -89,14 +99,25 @@ li.dropdown {
 }
 
 .jumbotron {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 // Dashboard
 
+.dashboard-header {
+  margin-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+
+.dashboard-header h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
 .panel {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   font-weight: 300;
   box-shadow: 0px 0px 40px rgba(153, 153, 153, 0.3),
               0px 10px 30px rgba(153, 153, 153, 0.3);
@@ -113,20 +134,31 @@ li.dropdown {
 }
 
 .bike-panel-footer {
-  height: 70px;
+  height:65px;
+  background-color: rgba(153, 153, 153, 0.2);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.bike-table-row-short {
+  height: 20px;
+  width: 100%;
+  border: 0px solid rgba(153, 153, 153, 0.2);
+  margin: 0;
+  overflow: auto;
 }
 
 .bike-table-row {
-  height: 50px;
+  height: 90px;
   width: 100%;
-  border: 1px solid rgba(153, 153, 153, 0.2);
-  display: block;
+  border: 0px solid rgba(153, 153, 153, 0.2);
+  margin: 0;
+  overflow: auto;
 }
 
 .bike-col {
   height: 30px;
   width: 50%;
-  display: block;
 }
 
 .top-left, .bottom-left{
@@ -142,31 +174,88 @@ li.dropdown {
 }
 
 .bike-odo {
+  background: $panel-title;
   float: right;
+  margin-top: 10px;
   margin-bottom: 20px;
   margin-right: 20px;
   padding: 6px 9px;
   font-size: 16px;
-  box-shadow: 0px 0px 40px rgba(153, 153, 153, 0.3),
-              0px 10px 30px rgba(153, 153, 153, 0.3);
+  box-shadow: 0px 0px 20px rgba(153, 153, 153, 0.3),
+              0px 10px 20px rgba(153, 153, 153, 0.3);
 }
 
-.dashboard-header {
-  margin-top: 20px;
-  padding-bottom: 0;
-  margin-bottom: 0px;
+.panel-container {
+  display: block;
+  overflow: hidden;
+  box-shadow: 0px 15px 20px rgba(153, 153, 153, 0.15);
+}
+.make-model-container {
+  float: left;
+  margin-left: 20px;
 }
 
-.dashboard-header h3 {
+.make {
+  color: $panel-title;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin-top: 5px;
+}
+
+.model {
+  color: $panel-title;
+  font-size: 14px;
   font-weight: 300;
-  text-align: center;
+  margin-top: 0px;
+  margin-left: 3px;
+  line-height: 1em;
 }
+
+.bike-detail-title {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.bike-detail {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+  padding-left: 40px;
+  padding-top: 5px;
+}
+
+.add-comment {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: $strava-main;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 0px 15px;
+  box-shadow: 0px 0px 20px rgba(153, 153, 153, 0.3),
+              0px 10px 20px rgba(153, 153, 153, 0.3);
+  z-index: 1000;
+  font-size: 20px;
+  color: #fff;
+}
+
+.add-comment:hover {
+  background-color: rgba(240,70,5, 1.0);
+}
+
 
 // footer
 
 .footer {
   background-color: #FBFBFB;
   border-radius: 0;
+  z-index: 1;
 }
 
 #footer-container {
